@@ -1,0 +1,253 @@
+/* ===== BALLON D'OR 2025 — CSS Simple ===== */
+
+body {
+    background-color: #111;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* EN-TETE */
+header {
+    background-color: #1a1400;
+    border-bottom: 3px solid #FFD700;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header h1 {
+    color: #FFD700;
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 6px 12px;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #FFD700;
+    color: #111;
+    border-color: #FFD700;
+}
+
+/* CONTENU */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+h2 {
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+/* GRILLE DES JOUEURS */
+.grille {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.carte {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #ddd;
+    display: block;
+    transition: border-color 0.2s;
+}
+
+.carte:hover {
+    border-color: #FFD700;
+    background-color: #2a2a2a;
+}
+
+.carte .emoji {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.carte .nom {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.carte .club {
+    color: #FFD700;
+    font-size: 0.85rem;
+    margin-bottom: 3px;
+}
+
+.carte .pays {
+    color: #777;
+    font-size: 0.8rem;
+}
+
+.carte .note-mini {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.etoiles {
+    color: #FFD700;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+/* FORMULAIRES */
+.form-box {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    background-color: #2e2e2e;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 10px;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #FFD700;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* BOUTONS */
+.btn {
+    background-color: #FFD700;
+    color: #111;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #e6c200;
+}
+
+.btn-rouge {
+    background-color: #c62828;
+    color: #fff;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+}
+
+.btn-rouge:hover {
+    background-color: #b71c1c;
+}
+
+/* MESSAGES */
+.msg-ok {
+    background-color: #1b4d1b;
+    border: 1px solid #4caf50;
+    color: #4caf50;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.msg-erreur {
+    background-color: #4d1b1b;
+    border: 1px solid #e53935;
+    color: #e53935;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* TABLEAU */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #2a2a2a;
+    color: #FFD700;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #FFD700;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    vertical-align: top;
+}
+
+tr:hover td {
+    background-color: #1e1e1e;
+}
+
+td a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+    color: #555;
+    font-size: 0.85rem;
+}
